@@ -1,0 +1,31 @@
+
+
+body{
+    background-image: url(Cerlongo-Chiesa_di_S._Giorgio.jpg);
+    background-position: center;
+    background-size: 30px;
+    text-align: center;
+    padding: 40px;
+}
+#titolo{
+    text-align: center;
+    background: #3cf350;
+    margin: 0;
+    border-bottom: 3px solid red;
+}
+
+#SIoNO{
+    color: crimson;
+    text-align: center;
+    font-size: 91px;
+    vertical-align: middle;
+    margin: 0px;
+    padding-top: 50%;
+    background: #83f0ff;
+    height: 500px;
+}
+
+#cont{
+    background-color: aliceblue;
+
+}
