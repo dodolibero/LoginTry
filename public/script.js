@@ -1,4 +1,11 @@
 
+function maPiove(){
+    maIlTempo()
+    
+
+
+}
+
 function maIlTempo(){ 
     let lat, lon;
     if ('geolocation' in navigator) {
@@ -17,8 +24,11 @@ function maIlTempo(){
         document.getElementById("tempo").textContent = tempo_desc;
         
         console.log(json)
-    })
+        console.log(json.weather[0].main)
+        if (json.weather[0].main=="Rain"){
+            document.getElementById('SIoNO').textContent = "SI"
+        }else{document.getElementById('SIoNO').textContent = "no,direi di no" }})
 
 
 
-    }else{console.log("i'm sowwwwy")}}
+    }else{document.getElementById('SIoNO').textContent = "Boh,non lo so" }}
