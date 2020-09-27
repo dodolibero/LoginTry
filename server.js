@@ -2,7 +2,10 @@ const { response } = require('express')
 const express = require('express')
 const fetch = require("node-fetch")
 require("dotenv").config();
-console.log(process.env.API_KEY)
+
+const Datastore = require("nedb")
+const database = new Datastore("database.db");
+database.loadDatabase();
 
 const app = express()
 const port = 3000
@@ -22,6 +25,8 @@ app.get("/weather/:lat/:lon",async (request,response)=>{
     const Fresponse = await fetch(url)
     const json = await Fresponse.json()
     response.json(json)
+    const quando = new Date().toString();
+    database.insert({"ora":quando,"tempo":json})
     console.log(json)
 
 
