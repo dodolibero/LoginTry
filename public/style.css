@@ -19,6 +19,10 @@ body{
     border-bottom: 3px solid red;
 }
 
+
+#sup{
+    background: white
+}
 #SIoNO{
     color: crimson;
     text-align: center;
