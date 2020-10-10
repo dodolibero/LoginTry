@@ -5,12 +5,17 @@
     margin:auto;
     margin-bottom: 10px;
 }
+
+#body_container{padding: 40px;
+
+}
+
 body{
     background-image: url(Cerlongo-Chiesa_di_S._Giorgio.jpg);
     background-position: center;
     background-size: 30px;
     text-align: center;
-    padding: 40px;
+    
 }
 #titolo{
     text-align: center;
@@ -21,7 +26,10 @@ body{
 
 
 #sup{
-    background: white
+    background: #00ff51fe;
+    padding-bottom :1px;
+    border-bottom: 3px solid red;
+    
 }
 #SIoNO{
     color: crimson;
@@ -36,5 +44,13 @@ body{
 
 #cont{
     background-color: aliceblue;
+
+}
+
+footer{
+    background-color: rgb(255, 158, 88);
+    padding: 0;
+    color: white;
+
 
 }
