@@ -25,10 +25,9 @@ function maIlTempo(){
         
         console.log(json)
         console.log(json.weather[0].main)
+
         if (json.weather[0].main=="Rain"){
-            document.getElementById('SIoNO').textContent = "SI"
-        }else{document.getElementById('SIoNO').textContent = "no,direi di no" }})
+            document.getElementById('SIoNO').textContent = "SI, abbastanza"
+        }else{document.getElementById('SIoNO').textContent = "no, direi di no" }})
 
-
-
-    }else{document.getElementById('SIoNO').textContent = "Boh,non lo so" }}
+}else{document.getElementById('SIoNO').textContent = "Boh,non lo so" }}

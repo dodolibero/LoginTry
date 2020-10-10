@@ -1,5 +1,10 @@
 
-
+#map{
+    height: 300px; 
+    max-width: 100%;
+    margin:auto;
+    margin-bottom: 10px;
+}
 body{
     background-image: url(Cerlongo-Chiesa_di_S._Giorgio.jpg);
     background-position: center;
